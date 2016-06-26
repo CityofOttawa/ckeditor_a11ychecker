@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\ckeditor_a11ychecker\Plugin\CKEditorPlugin\A11yCheckerPlugin.
- */
-
 namespace Drupal\ckeditor_a11ychecker\Plugin\CKEditorPlugin;
 
 use Drupal\ckeditor\CKEditorPluginBase;
@@ -19,6 +14,7 @@ use Drupal\editor\Entity\Editor;
  * )
  */
 class A11yCheckerPlugin extends CKEditorPluginBase {
+
   /**
    * {@inheritdoc}
    */
@@ -58,4 +54,5 @@ class A11yCheckerPlugin extends CKEditorPluginBase {
   public function getFile() {
     return base_path() . 'libraries/a11ychecker/plugin.js';
   }
+
 }
