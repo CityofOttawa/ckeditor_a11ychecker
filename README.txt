@@ -25,24 +25,28 @@ add the Accessibility  Button to any CKEditor-enabled text format you want.
 Installation
 ============
 1. Download the plugin from http://ckeditor.com/addon/a11ychecker
-2. Place the plugin in the root libraries folder (/libraries).
-3. Enable CKEditor Accessibility Checker module in the Drupal admin.
+3. Place the plugin in the root libraries folder (/libraries).
+4. Enable CKEditor Accessibility Checker module in the Drupal admin.
 
 Each filter format will now have a config tab for this plugin.
 
 Dependencies
 ============
-This module requires the core CKEditor module and the Libraries API
-module.
+This module requires the core CKEditor module, CKEditor Balloon Panel and
+the Libraries API module.
 
 Uninstallation
 ==============
 1. Uninstall the module from 'Administer >> Modules'.
 
-MAINTAINERS
+Maintainers
 ===========
 Mauricio Dinarte - https://www.drupal.org/u/dinarcon
 Darryl Norris - https://www.drupal.org/u/darol100
+
+Drupal 7 Version
+================
+Dave Bagler (Bagler IT) - https://www.drupal.org/u/dave-bagler
 
 Credits
 =======

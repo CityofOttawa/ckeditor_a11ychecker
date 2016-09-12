@@ -4,4 +4,5 @@ package = CKEditor
 core = 7.x
 
 dependencies[] = ckeditor
+dependnecies[] = ckeditor_balloonpanel
 dependencies[] = libraries

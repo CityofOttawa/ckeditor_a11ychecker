@@ -1,9 +1,23 @@
 <?php
 
-namespace Drupal\ckeditor_a11ychecker\Plugin\CKEditorPlugin;
-
-use Drupal\ckeditor\CKEditorPluginBase;
-use Drupal\editor\Entity\Editor;
+/**
+ * Implements hook_ckeditor_plugin().
+ */
+function ckeditor_a11ychecker_ckeditor_plugin() {
+  return array(
+    'ckeditor_a11ychecker' => array(
+      'name' => 'ckeditor_a11ychecker',
+      'desc' => t('CKEditor Accessibility Checker'),
+      'path' => '',
+      'buttons' => array(
+        'a11ychecker' => array(
+          'icon' => 'icons/a11ychecker.png',
+          'label' => t('Accessibility Checker'),
+        ),
+      ),
+    ),
+  );
+}
 
 /**
  * Defines the "a11ychecker" plugin.
