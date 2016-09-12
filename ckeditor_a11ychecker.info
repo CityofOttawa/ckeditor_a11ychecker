@@ -1,8 +1,8 @@
 name = CKEditor Accessibility Checker
 description = Adds the Accessibility Checker plugin to CKEditor.
-package = CKEditor
+package = User interface
 core = 7.x
 
 dependencies[] = ckeditor
-dependnecies[] = ckeditor_balloonpanel
+dependencies[] = ckeditor_balloonpanel
 dependencies[] = libraries

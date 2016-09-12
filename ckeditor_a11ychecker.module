@@ -5,12 +5,12 @@
  */
 function ckeditor_a11ychecker_ckeditor_plugin() {
   return array(
-    'ckeditor_a11ychecker' => array(
-      'name' => 'ckeditor_a11ychecker',
+    'a11ychecker' => array(
+      'name' => 'a11ychecker',
       'desc' => t('CKEditor Accessibility Checker'),
-      'path' => '',
+      'path' => libraries_get_path('a11ychecker', TRUE) . '/',
       'buttons' => array(
-        'a11ychecker' => array(
+        'A11ychecker' => array(
           'icon' => 'icons/a11ychecker.png',
           'label' => t('Accessibility Checker'),
         ),
@@ -20,53 +20,14 @@ function ckeditor_a11ychecker_ckeditor_plugin() {
 }
 
 /**
- * Defines the "a11ychecker" plugin.
- *
- * @CKEditorPlugin(
- *   id = "a11ychecker",
- *   label = @Translation("Accessibility Checker")
- * )
+ * Implements hook_libraries_info().
  */
-class A11yCheckerPlugin extends CKEditorPluginBase {
-
-  /**
-   * {@inheritdoc}
-   */
-  public function getDependencies(Editor $editor) {
-    return ['balloonpanel'];
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function getLibraries(Editor $editor) {
-    return ['core/drupal.jquery'];
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function getConfig(Editor $editor) {
-    return [];
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function getButtons() {
-    return array(
-      'A11ychecker' => array(
-        'label' => t('Accessibility Checker'),
-        'image' => base_path() . 'libraries/a11ychecker/icons/a11ychecker.png',
-      ),
-    );
-  }
-
-  /**
-   * {@inheritdoc}
-   */
-  public function getFile() {
-    return base_path() . 'libraries/a11ychecker/plugin.js';
-  }
-
+function ckeditor_a11ychecker_libraries_info() {
+  return array(
+    'a11ychecker' => array(
+      'name' => 'CKEditor Accessibility Checker',
+      'vendor url' => 'http://ckeditor.com/addon/a11ychecker',
+      'download url' => 'http://ckeditor.com/addon/a11ychecker',
+    ),
+  );
 }
