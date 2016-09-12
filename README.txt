@@ -20,7 +20,7 @@ you can integrate any other similar library to achieve comparable results.
 Usage
 =====
 Go to the Text formats and editors settings (/admin/config/content/formats) and
-add the YouTube Button to any CKEditor-enabled text format you want.
+add the Accessibility  Button to any CKEditor-enabled text format you want.
 
 Installation
 ============
@@ -32,7 +32,7 @@ Each filter format will now have a config tab for this plugin.
 
 Dependencies
 ============
-This module requires the core CKEditor module and CKEditor Balloon Panel
+This module requires the core CKEditor module and the Libraries API
 module.
 
 Uninstallation
